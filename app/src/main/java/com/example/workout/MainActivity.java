@@ -10,5 +10,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        WorkoutDetailFragment workoutDetailFragment =
+                (WorkoutDetailFragment) getSupportFragmentManager().findFragmentById(R.id.detail_flag);
+        workoutDetailFragment.setWorkout(1);
     }
 }
